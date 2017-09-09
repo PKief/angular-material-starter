@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('pkief.github.io App', () => {
+describe('Angular Material Starter App', () => {
   let page: AppPage;
 
   beforeEach(() => {

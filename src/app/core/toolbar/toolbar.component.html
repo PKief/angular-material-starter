@@ -1,0 +1,12 @@
+<md-toolbar color="primary">
+  <md-icon class="menu-icon" (click)="toggleSidenav()">menu</md-icon>
+  <span>Angular Material Starter</span>
+  <span class="fill-remaining-space"></span>
+
+  <button md-icon-button [mdMenuTriggerFor]="menu" mdTooltip="Change theme"><md-icon>format_color_fill</md-icon></button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item (click)="changeTheme('default-theme')">Default</button>
+    <button md-menu-item (click)="changeTheme('black-theme')">Dark</button>
+    <button md-menu-item (click)="changeTheme('light-theme')">Light</button>
+  </md-menu>
+</md-toolbar>
