@@ -1,12 +1,12 @@
-<md-toolbar color="primary">
-  <md-icon class="menu-icon" (click)="toggleSidenav()">menu</md-icon>
+<mat-toolbar color="primary">
+  <mat-icon class="menu-icon" (click)="toggleSidenav()">menu</mat-icon>
   <span>Angular Material Starter</span>
   <span class="fill-remaining-space"></span>
 
-  <button md-icon-button [mdMenuTriggerFor]="menu" mdTooltip="Change theme"><md-icon>format_color_fill</md-icon></button>
-  <md-menu #menu="mdMenu">
-    <button md-menu-item (click)="changeTheme('default-theme')">Default</button>
-    <button md-menu-item (click)="changeTheme('black-theme')">Dark</button>
-    <button md-menu-item (click)="changeTheme('light-theme')">Light</button>
-  </md-menu>
-</md-toolbar>
+  <button mat-icon-button [matMenuTriggerFor]="menu" mdTooltip="Change theme"><mat-icon>format_color_fill</mat-icon></button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="changeTheme('default-theme')">Default</button>
+    <button mat-menu-item (click)="changeTheme('black-theme')">Dark</button>
+    <button mat-menu-item (click)="changeTheme('light-theme')">Light</button>
+  </mat-menu>
+</mat-toolbar>

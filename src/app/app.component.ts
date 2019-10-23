@@ -1,6 +1,6 @@
-import { Component, OnInit, HostBinding, OnDestroy } from '@angular/core';
+import { Component, HostBinding, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { ThemingService } from './core/theming.service';
-import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-root',

@@ -1,16 +1,16 @@
-@import '~@angular/material/theming';
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "~@angular/material/theming";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @include mat-core();
 
-@import 'themes/default-theme.scss';
-@import 'themes/light-theme.scss';
-@import 'themes/black-theme.scss';
+@import "themes/default-theme.scss";
+@import "themes/light-theme.scss";
+@import "themes/black-theme.scss";
 
-@import 'app/core/sidenav/sidenav.component';
+@import "app/core/sidenav/sidenav.component";
 
 @mixin custom-components-theme($theme) {
-    @include sidenav-theme($theme);
+  @include sidenav-theme($theme);
 }
 
 @include angular-material-theme($app-theme);
@@ -32,7 +32,7 @@
 }
 
 // Default styles
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
